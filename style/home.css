@@ -1,0 +1,106 @@
+.hamburger {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: rgb(39, 191, 214);
+    cursor: pointer;
+    transition: all .25s ease;
+    user-select: none;
+    background: white;
+    z-index: 3;
+}
+
+.hamburger h1 {
+    font-size: 18px;
+    letter-spacing: -2px;
+    position: absolute;
+    top: -3px;
+    left: 15px;
+}
+
+.hamburger h1:nth-child(2) {
+    top: 5px;
+}
+
+.hamburger h1:nth-child(3) {
+    top: 13px;
+}
+
+.splash {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    height: 400px;
+    min-height: 400px;
+    z-index: 2;
+    visibility: hidden;
+    left: 15%;
+    top: 15%;
+}
+
+.overlay > h1 {
+    font-size: 20px;
+}
+
+.overlay span {
+    font-size: 15px;
+    color: rgb(39, 191, 214);
+    font-style: italic;
+}
+
+.overlay > h2 {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.overlay > h2:hover {
+    color: rgb(39, 191, 214);
+}
+
+.home {
+    width: 100vw;
+    height: 650px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background: rgb(242, 242, 242);
+    flex-direction: column;
+    background-image: url('../media/mountain.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 700px;
+}
+
+.home > h1 {
+    font-size: 80px;
+    margin-top: 150px;
+}
+
+.home > h2 {
+    opacity: .6;
+}
+
+@media (max-width: 650px) {
+    .home > h1 {
+        font-size: 55px;
+    }
+    .home > h2 {
+        font-size: 20px;
+    }
+    .home {
+        background-size: 80%;
+    }
+}

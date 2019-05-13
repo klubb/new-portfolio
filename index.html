@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='./media/logo.png' rel='icon'>
+    <link href='./style/style.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300" rel="stylesheet">
+    <script src='./script.js' defer></script>
+    <title>Jake Rowland - Web Developer</title>
+</head>
+
+<body>
+    <div class='hamburger' onclick='openNav()'>
+        <h1>__</h1>
+        <h1>__</h1>
+        <h1>__</h1>
+    </div>
+    <div class='splash'></div>
+    <div class='overlay'>
+        <h1>JAKE ROWLAND <span>WEB DEVELOPER</span></h1>
+        <h2 onclick='nav("home")'>HOME</h2>
+        <h2 onclick='nav("projects")'>PROJECTS</h2>
+        <h2 onclick='nav("skills")'>SKILLS</h2>
+        <h2 onclick='nav("about")'>ABOUT</h2>
+        <h2 onclick='nav("contact")'>CONTACT</h2>
+    </div>
+
+    <div class='scuff'>
+        <span onclick='closeProject("scuff")'>X</span>
+        <h1>SCUFF</h1>
+        <h2>Direct Message App</h2>
+        <iframe src="https://scuff.chat" allowfullscreen="yes"></iframe>
+        <h3>Description</h3>
+        <p>My first full stack project, Scuff is a direct message app where users can send text, images, and emojis in real time. Users also have the ability to add contacts for quick messaging, change between a light and dark theme, and toggle expletive word filtering.</p>
+        <h3>Technologies</h3>
+        <p>React, Redux, HTML, Styled Components, Socket.io, Node, Express, Postgresql, Auth0</p>
+        <h3>Links</h3>
+        <p><span><a href='https://github.com/jakerowla/scuff' target='_blank'>Github Repository</a></span>
+            <span><a href='https://scuff.chat' target='_blank'>Live Site</a></span></p>
+    </div>
+
+    <div class='kasploot'>
+        <span onclick='closeProject("kasploot")'>X</span>
+        <h1>KASPLOOT</h1>
+        <h2>Clone of Kahoot</h2>
+        <iframe src="https://kasploot.com" allowfullscreen="yes"></iframe>
+        <h3>Description</h3>
+        <p>Aiming to clone the game aspect of Kahoot, Kasploot allows users to create, host, and play their own quizzes with others in real time.</p>
+        <h3>Technologies</h3>
+        <p>React, Redux, HTML, Styled Components, Socket.io, Node, Express, Postgresql, Auth0</p>
+        <h3>Links</h3>
+        <p><span><a href='https://github.com/jakerowla/kasploot' target='_blank'>Github Repository</a></span> <span><a
+                    href='https://kasploot.com' target='_blank'>Live Site</a></span></p>
+    </div>
+
+    <div class='vr'>
+        <span onclick='closeProject("vr")'>X</span>
+        <h1>VR ART GALLERY</h1>
+        <h2>Virtual Reality App</h2>
+        <iframe src="https://vrartgallery.org/#/admin/Trailer/" allowfullscreen="yes"></iframe>
+        <h3>Description</h3>
+        <p>A virtual reality application where users can browse galleries made by other users or create their own. When
+            creating a gallery, users can upload up to 15 images for each gallery and choose from a selection of music
+            and textures to accompany each gallery.
+         </p>
+         <p class='vr-performance'>NOTE: If the preview is not loading you can find a fix under the "Performance Issues" section on the github <a href='https://github.com/Jake-Brady/VR-Art-Gallery/blob/master/README.md' target='_blank'>readme</a>.</p>
+        <h3>Technologies</h3>
+        <p>React, Redux, A-Frame, AWS, Bcrypt, Node, Express, Postgresql.</p>
+        <h3>Links</h3>
+        <p><span><a href='https://github.com/Jake-Brady/VR-Art-Gallery' target='_blank'>Github Repository</a></span>
+            <span><a href='https://vrartgallery.org' target='_blank'>Live Site</a></span></p>
+    </div>
+
+    <div id='main'>
+        <section class='home'>
+            <h1>Hi. I'm Jake.</h1>
+            <h2>A web developer.</h2>
+        </section>
+
+        <section class='projects'>
+            <h1>My Work.</h1>
+            <div class='projects-container'>
+                <div onclick='description("scuff")'>
+                    <img src='./media/scuff.png' class='project-img' />
+                    <div class='project-hover'>+</div>
+                    <h1>SCUFF</h1>
+                </div>
+                <div onclick='description("kasploot")'>
+                    <img src='./media/kasploot.png' class='project-img' />
+                    <div class='project-hover'>+</div>
+                    <h1>KASPLOOT</h1>
+                </div>
+                <div onclick='description("vr")'>
+                    <img src='./media/vr.png' class='project-img' />
+                    <div class='project-hover'>+</div>
+                    <h1>VR ART GALLERY</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class='skills'>
+            <h1>Skill Set.</h1>
+            <div class='skills-icons'>
+                <div>
+                    <img src='./media/html.png' />
+                    <h1>HTML</h1>
+                </div>
+                <div>
+                    <img src='./media/CSS.png' />
+                    <h1>CSS</h1>
+                </div>
+                <div>
+                    <img src='./media/js.png' />
+                    <h1>JAVASCRIPT</h1>
+                </div>
+                <div>
+                    <img src='./media/React.png' />
+                    <h1>REACT</h1>
+                </div>
+                <div>
+                    <img src='./media/redux.png' />
+                    <h1>REDUX</h1>
+                </div>
+                <div>
+                    <img src='./media/sass.png' />
+                    <h1>SASS</h1>
+                </div>
+                <div>
+                    <img src='./media/sql.png' />
+                    <h1>POSTGRESQL</h1>
+                </div>
+                <div>
+                    <img src='./media/Node.png' />
+                    <h1>NODE</h1>
+                </div>
+                <div>
+                    <img src='./media/socket.io.png' />
+                    <h1>SOCKET.IO</h1>
+                </div>
+                <div>
+                    <img src='./media/Express.png' />
+                    <h1>EXPRESS</h1>
+                </div>
+                <div>
+                    <img src='./media/rest.png' />
+                    <h1>REST API</h1>
+                </div>
+                <div>
+                    <img src='./media/git.png' />
+                    <h1>GIT</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class='about'>
+            <h1>Who am I?</h1>
+            <img src='./media/jake.png' alt='' />
+            <p>I'm just a dude who likes to make cool websites and mess around with code.
+                I found my initial interest in coding while at the University of Utah which lead to me leaving and attending DevMountain for a more hands on experience. I've been coding ever since.</p>
+            <p>Aside from coding I also really enjoy video games, with Terraria, Fallout: New Vegas, and Skyrim being among my favorites. And on the rare occasion I go outside, hiking is pretty alright.
+            </p>
+        </section>
+
+        <section class='contact'>
+            <h1>Hit me up.</h1>
+            <h2>
+                <a href='https://linkedin.com/in/jakerowla' target='_blank'>LinkedIn</a>
+                • <a href='https://github.com/jakerowla' target='_blank'>Github</a>
+                • <a href='mailto:jakenrowland@gmail.com'>Email</a>
+            </h2>
+        </section>
+    </div>
+</body>
+
+</html>

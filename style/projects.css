@@ -1,0 +1,208 @@
+.projects {
+    width: 100vw;
+    height: 650px;
+    background: rgba(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.projects > h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-container > div {
+    width: 350px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    margin: 0px 10px;
+}
+
+.projects-container > div:hover .project-hover {
+    opacity: 1;
+}
+
+.project-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgb(38, 141, 219);
+    opacity: 0;
+    transition: ease all .25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.projects-container  h1 {
+    position: absolute;
+    top: 120%;
+    color: black;
+    font-size: 25px;
+    pointer-events: none;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+}
+
+.scuff, .kasploot, .vr {
+    width: 100vw;
+    min-height: 100vh;
+    background: rgb(242, 242, 242);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    z-index: 4;
+    visibility: hidden;
+}
+
+.scuff > h1, .kasploot > h1, .vr > h1 {
+    font-size: 70px;
+}
+
+.scuff > h2, .kasploot > h2, .vr > h2 {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.scuff > h3, .kasploot > h3, .vr > h3 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.scuff > span, .kasploot > span, .vr > span {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    transform: scale(1, 0.7);
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.scuff > span:hover, .kasploot > span:hover, .vr > span:hover {
+    color: rgb(39, 191, 214);
+}
+
+.scuff > p, .kasploot > p, .vr > p {
+    width: 600px;
+}
+
+.scuff > p:last-child, .kasploot > p:last-child, .vr > p:last-child {
+    margin-bottom: 100px;
+}
+
+.scuff > p > span, .kasploot > p > span, .vr > p > span {
+    margin: 0px 5px;
+}
+
+.vr > iframe, .kasploot > iframe, .scuff > iframe {
+    width: 800px;
+    height: 400px;
+    border: none;
+    margin: 40px 0px;
+}
+
+.kasploot > iframe, .scuff > iframe {
+    zoom: 2;
+    transform: scale(.5);
+    margin: -80px 0px;
+}
+
+.vr-performance {
+    margin: 20px 0px;
+}
+
+@media (max-width: 1150px) {
+    .projects-container > div {
+        width: 300px;
+        height: 175px;
+    }
+}
+
+@media (max-width: 950px) {
+    .projects {
+        height: 800px;
+    }
+    .projects-container {
+        flex-flow: row wrap;
+    }
+    .projects-container > div:last-child {
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 700px) {
+    .projects {
+        height: 1100px;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-container > div:nth-child(2){
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 650px) {
+    .projects > h1 {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 900px) {
+    .vr > iframe, .kasploot > iframe, .scuff > iframe {
+        width: 500px;
+        height: 250px;
+    }
+    .kasploot > iframe, .scuff > iframe {
+        margin: -70px 0px;
+        zoom: 3;
+        transform: scale(.36);
+    }
+    .scuff > p, .kasploot > p, .vr > p {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .vr > iframe, .kasploot > iframe, .scuff > iframe {
+        width: 300px;
+        height: 500px;
+        zoom: 1.5;
+        transform: scale(.7);
+        margin: -60px 0px;
+    }
+    .scuff > p, .kasploot > p, .vr > p {
+        width: 300px;
+    }
+    .scuff > h1, .kasploot > h1, .vr > h1 {
+        font-size: 40px;
+    }
+    .scuff > span, .kasploot > span, .vr > span {
+        top: 0px;
+        right: 30px;
+    }
+}
