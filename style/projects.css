@@ -25,6 +25,7 @@
 
 .projects-container  div {
     min-width: 350px;
+    
 }
 
 
@@ -193,35 +194,35 @@
 }
 
 @media (max-width: 900px) {
-    .vr > iframe, .kasploot > iframe, .scuff > iframe {
+    .vr > iframe, .kasploot > iframe, .scuff > iframe, .sports > iframe {
         width: 500px;
         height: 250px;
     }
-    .kasploot > iframe, .scuff > iframe {
+    .kasploot > iframe, .scuff > iframe, .sports > iframe, .vr > iframe {
         margin: -70px 0px;
         zoom: 3;
         transform: scale(.36);
     }
-    .scuff > p, .kasploot > p, .vr > p {
+    .scuff > p, .kasploot > p, .vr > p, .sports > p {
         width: 500px;
     }
 }
 
 @media (max-width: 600px) {
-    .vr > iframe, .kasploot > iframe, .scuff > iframe {
+    .vr > iframe, .kasploot > iframe, .scuff > iframe, .sports > iframe {
         width: 300px;
         height: 500px;
         zoom: 1.5;
         transform: scale(.7);
         margin: -60px 0px;
     }
-    .scuff > p, .kasploot > p, .vr > p {
+    .scuff > p, .kasploot > p, .vr > p, .sports > p{
         width: 300px;
     }
-    .scuff > h1, .kasploot > h1, .vr > h1 {
+    .scuff > h1, .kasploot > h1, .vr > h1, .sports > h1 {
         font-size: 40px;
     }
-    .scuff > span, .kasploot > span, .vr > span {
+    .scuff > span, .kasploot > span, .vr > span, .sports > span {
         top: 0px;
         right: 30px;
     }
